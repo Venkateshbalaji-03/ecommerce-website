@@ -39,8 +39,8 @@ function App() {
     : filteredProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   const showAll = () => {
-    if (itemsPerPage === filteredProducts.length) setItemsPerPage(8);
-    else setItemsPerPage(filteredProducts.length || 8);
+    if (itemsPerPage === filteredProducts.length) setItemsPerPage(10);
+    else setItemsPerPage(filteredProducts.length || 10);
     setCurrentPage(1);
   };
 
